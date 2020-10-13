@@ -1,0 +1,37 @@
+body{
+    /*background-image: linear-gradient(to right, hsl(36, 100%, 14%), steelblue);*/
+    background-color: steelblue;
+}
+
+#container{
+    height: 90%;
+}
+
+.column {
+    max-width: 80em;
+}
+
+#NumeroServer, #descrizione {
+    text-align: left;
+}
+
+.circular.ui.mini.icon.button{
+    margin-left: 1em;
+}
+
+#panel {
+    display: none;
+    font-size: 1.25em;
+}
+
+#logo_uniud {
+    size: 40px;
+}
+
+#NomeUtente {
+    margin-right: 0.5em;
+}
+
+#Numero{
+    margin-left: 0.5em;
+}

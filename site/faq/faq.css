@@ -1,0 +1,22 @@
+body{
+    /*background-image: linear-gradient(to right, hsl(36, 100%, 14%), steelblue);*/
+    background-color: lightblue;
+}
+
+#container{
+    height: 90%;
+}
+
+.column {
+    max-width: 90%;
+}
+
+#logo_uniud {
+    size: 40px;
+}
+
+#NomeUtente {
+    margin-right: 0.5em;
+}
+
+

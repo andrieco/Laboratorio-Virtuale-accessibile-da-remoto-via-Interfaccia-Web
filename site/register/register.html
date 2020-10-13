@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+        <script src="/register/register.js"></script>
+        <link rel="stylesheet" type="text/css" href="/register/register.css"/>
+        <link rel="icon" href="../images/LAB_Icon.png"/>
+    </head>
+    <body>
+
+        <div id="menu" class="ui menu">
+            <div class="item">
+                <img id="logo_uniud" class="ui small image" src="../images/uniud_logo.png">
+            </div>
+            <div class="header item">
+                <h1>Laboratorio Virtuale</h1>
+            </div>
+        </div>
+
+        <div id="container" class="ui middle aligned center aligned stackable grid">
+            <div class="column">
+                <div class="ui bordered segment">
+                    <div class="ui grid">
+                        <div class="three wide column">
+                            <button id="Indietro" class="ui circular button icon">
+                                <i class="chevron cricle left icon"></i>
+                            </button>
+                        </div>
+                        <div class="ten wide column">
+                            <h1>REGISTRAZIONE</h1>
+                        </div>
+                        <div class="three wide column"></div>
+                    </div>
+
+                    <div>
+                        <img id="register_image" class="ui centered small image" src="../images/register_icon.png">
+                    </div>
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Nome Utente</label>
+                            <div class="ui labeled input" >
+                                <div class="ui basic right pointing label">
+                                    <i class="fitted big user circle icon"></i>
+                                </div>
+                                <div class="ui icon input">
+                                    <input id="username" type="text" name="username" placeholder="Username">
+                                    <i class="popup question large circle outline icon link" data-content="L'username deve avere almeno un carattere alfanumerico, non avere
+                                                due spazi adiacenti e non avere uno spazio né all'inizio né alla fine." data-position="right center"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui labeled input" >
+                                <div class="ui basic right pointing label">
+                                    <i class="fitted big key icon"></i>
+                                </div>
+                                <input id="password" type="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Ripeti Password</label>
+                            <div class="ui labeled input" >
+                                <div class="ui basic right pointing label">
+                                    <i class="fitted big key icon"></i>
+                                </div>
+                                <input id="repassword" type="password" name="password" placeholder="Re-Enter Password">
+                            </div>
+                        </div>
+                        <br>
+                    </form>
+                    <button id="Invia" class="ui fluid large orange button">Registrati</button>
+                    <div id="errore" class="ui error message" hidden></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

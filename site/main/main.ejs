@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+    <script src="/main/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/main/main.css"/>
+    <link rel="icon" href="../images/LAB_Icon.png"/>
+</head>
+<body>
+
+<div id="menu" class="ui menu">
+    <div class="item">
+        <img id="logo_uniud" class="ui small image" src="../images/uniud_logo.png">
+    </div>
+    <div class="header item">
+        <h1>Laboratorio Virtuale</h1>
+    </div>
+    <div class="right menu">
+        <div class="clickable item big ui dropdown">
+            <span id="NomeUtente" class="middle aligned"><%=utente%></span>
+            <i id="user" class="fitted user big icon"></i>
+            <div class="menu">
+                <div id="Logout" class="item">
+                    <i class="sign out icon"></i> Logout
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="container" class="ui middle aligned center aligned grid">
+    <div class="column">
+        <div id="fondo" class="ui bordered segment">
+            <h1>Tool Disponibili:</h1>
+            <div class="ui middle aligned center aligned two columns grid">
+                <div class="column">
+                    <div id="1" class="clickable ui bordered segment">
+                        <img class="ui small centered image" src="../images/GCC.png">
+                        <h1>Compilatore GCC</h1>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="2" class="unavailable ui bordered segment">
+                        <img class="ui small centered image" src="../images/unavailable.png">
+                        <h1>Non disponibile</h1>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="3" class="unavailable ui bordered segment">
+                        <img class="ui small centered image" src="../images/unavailable.png">
+                        <h1>Non disponibile</h1>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="4" class="unavailable ui bordered segment">
+                        <img class="ui small centered image" src="../images/unavailable.png">
+                        <h1>Non disponibile</h1>
+                    </div>
+                </div>
+
+                <div class="inferiore sixteen wide column">
+                    <div id="FAQ" class="clickable ui bordered segment">
+                        <h1>FAQ</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/faq/faq.css"/>
+    <link rel="icon" href="../images/LAB_Icon.png"/>
+
+</head>
+<body>
+
+<div id="menu" class="ui menu">
+    <div class="item">
+        <img id="logo_uniud" class="ui small image" src="../images/uniud_logo.png">
+    </div>
+    <div class="header item">
+        <h1>Laboratorio Virtuale</h1>
+    </div>
+    <div class="right menu">
+        <div class="clickable item big ui dropdown">
+            <i id="user" class="fitted user big icon"></i>
+            <div class="menu">
+                <div id="Logout" class="item">
+                    <i class="sign out icon"></i> Logout
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="container" class="ui middle aligned center aligned grid">
+    <div class="column">
+        <div id="fondo" class="ui bordered segment">
+
+            <div class="ui grid">
+                <div class="two wide column">
+                    <button id="indietro" class="ui circular button icon">
+                        <i class="chevron cricle left icon"></i>
+                    </button>
+                </div>
+                <div class="twelve wide column">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <div class="two wide column"></div>
+            </div>
+
+            <img class="ui centered small image" src="../images/faq.png">
+
+            <div class="ui vertical segment">
+                <div id="one" class="ui fluid top attached button">
+                    Come posso ottenere i dati necessari per connettermi ad una macchina virtuale?
+                </div>
+                <div class="ui one attached left aligned segment" hidden>
+                    <p>
+                        Scegli il programma che ti serve dal menu presente nella pagina principale, premi sul pulsante e poi premi sul pulsante "Ottieni i dati per la Connessione"
+                        che troverai nella pagina successiva.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui vertical segment">
+                <div id="two" class="ui fluid top attached button">
+                    Dove posso inserire questi dati?
+                </div>
+                <div class="ui two attached left aligned segment" hidden>
+                    <p>
+                        Il sistema è pensato per funzionare con l'applicazione <em>Remote Desktop</em> messa a disposizione per i sistemi Windows e non solo.
+                        Se siete su sitemi Windows sarà sufficiente premere il pulsante Windows e digitare "Connessione Desktop Remoto" nella barra di ricerca oppure premere
+                        i tasti Windows + R, digitare mstsc e premere invio. A questo punto sarà sufficiente inserire i dati presenti nella pagina come richiesto dall'applicazione.
+                    </p>
+                    <p>
+                        Il sitema funziona anche con altri tipi di applicazioni simili, come ad esempio:
+                        <ul>
+                            <li>rdesktop</li>
+                            <li>Remmina</li>
+                            <li>KDE RDP viewer</li>
+                            <li>Sun Ray Windows Connector package</li>
+                        </ul>
+                        Per degli esempi si può seguire il seguente <a href="https://www.virtualbox.org/manual/ch07.html#rdp-viewers" target="_blank">link</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui vertical segment">
+                <div id="three" class="ui fluid top attached button">
+                    Domanda 3
+                </div>
+                <div class="ui three attached left aligned segment" hidden>
+                    <p>
+                        Risposta 3
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui vertical segment">
+                <div id="four" class="ui fluid top attached button">
+                    Domanda 4
+                </div>
+                <div class="ui four attached left aligned segment" hidden>
+                    <p>
+                        Risposta 4
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui vertical segment">
+                <div id="five" class="ui fluid top attached button">
+                    Domanda 5
+                </div>
+                <div class="ui five attached left aligned segment" hidden>
+                    <p>
+                        Risposta 5
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui vertical segment">
+                <div id="six" class="ui fluid top attached button">
+                    Domanda 6
+                </div>
+                <div class="ui six attached left aligned segment" hidden>
+                    <p>
+                        Risposta 6
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui vertical segment">
+                <div id="seven" class="ui fluid top attached button">
+                    Domanda 7
+                </div>
+                <div class="ui seven attached left aligned segment" hidden>
+                    <p>
+                        Risposta 7
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+	$('.ui.fluid.top.attached.button').click(function () {
+		let number = $(this).attr("id");
+		$('.ui.' + number + '.attached.left.aligned.segment').transition('slide down');
+	});
+	$('#indietro').click(function () {
+        window.location.href = "/main";
+	});
+</script>
+</html>>

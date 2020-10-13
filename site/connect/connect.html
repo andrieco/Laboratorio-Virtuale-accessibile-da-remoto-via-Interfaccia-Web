@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Connessione</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" integrity="sha512-k8F8QynmFNURwbUJC8drKA+fo3YfNvjqKzStdydD6au+MzvxBoRnxH8E31RJXwDY9DrnEiPhh9wBoDSIxhkyHQ==" crossorigin="anonymous"></script>
+        <script src="/connect/connect.js"></script>
+        <link rel="stylesheet" type="text/css" href="/connect/connect.css"/>
+        <link rel="icon" href="../images/LAB_Icon.png"/>
+    </head>
+    <body>
+
+    <div id="menu" class="ui menu">
+        <div class="item">
+            <img id="logo_uniud" class="ui small image" src="../images/uniud_logo.png">
+        </div>
+        <div class="header item">
+            <h1>Laboratorio Virtuale</h1>
+        </div>
+        <div class="right menu">
+            <div class="clickable item ui big dropdown">
+                <i id="user" class="fitted user big icon"></i>
+                <div class="menu">
+                    <div id="Logout" class="item">
+                        <i class="sign out icon"></i> Logout
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container" class="ui middle aligned center aligned grid">
+        <div class="column">
+            <div id="fondo" class="ui bordered segment">
+                <div class="ui grid">
+                    <div class="two wide column">
+                        <button id="Indietro" class="ui circular button icon">
+                            <i class="chevron cricle left icon"></i>
+                        </button>
+                    </div>
+                    <div class="twelve wide column">
+                        <h1>Connessione al Desktop Remoto</h1>
+                    </div>
+                    <div class="two wide column"></div>
+                </div>
+                <br>
+                <div id="NumeroServer">
+                    <p>Le macchine virtuali disponibili per l'applicazione selezionata sono: <strong id="Numero"></strong>
+                    <button id="ricarica" class="circular ui mini icon button">
+                        <i class="icon redo alternate"></i>
+                    </button>
+                    </p>
+                </div>
+                <br>
+                <button id="Bottone" class="ui fluid top attached green button">Ottieni i dati per la Connessione</button>
+                <div id="panel" class="ui attached segment">
+                    <p>Inserire i seguenti dati nel software Remote Desktop.</p>
+                    <div class="ui grid">
+                        <div class="eight wide column">
+                            <p>Computer: <em id="ipAddress"></em></p>
+                        </div>
+                        <div class="eight wide column">
+                            <p>Password: <em id="password"></em></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="ui grid">
+                        <div class="eight wide column">
+                            <p>Inserisci i file che vuoi caricare</p>
+                            <div id="prova" class="ui action input">
+                                <input type="file" name="file" multiple>
+                                <button id="inviaFile" class="ui button"><i class="fitted upload icon"></i></button>
+                            </div>
+                            <!--
+                            <h2>With <code>"express"</code> npm package</h2>
+                            <form action="/connect/sendfile" enctype="multipart/form-data" method="post">
+                                <div>Text field title: <input type="text" name="title" /></div>
+                                <div>File: <input type="file" name="someExpressFiles" multiple="multiple" /></div>
+                                <input type="submit" value="Upload" />
+                            </form>
+                            -->
+                        </div>
+                        <div class="eight wide column">
+                            <p>Scarica i file prodotti</p>
+                            <div class="ui input">
+                                <button id="ottieniFile" class="ui huge button"><i class="fitted download icon"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: lightpink;
+}
+
+#container{
+    height: 90%;
+}
+
+.column {
+    max-width: 45em;
+}
+
+#register_image {
+    margin-bottom: 4em;
+}
+
+#logo_uniud {
+    size: 40px;
+}

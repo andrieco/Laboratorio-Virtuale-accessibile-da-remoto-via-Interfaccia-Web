@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+        <script src="login/login.js"></script>
+        <link rel="stylesheet" type="text/css" href="/login/login.css"/>
+        <link rel="icon" href="../images/LAB_Icon.png"/>
+    </head>
+
+    <body>
+
+        <div id="menu" class="ui menu">
+            <div class="item">
+                <img id="logo_uniud" class="ui small image" src="./images/uniud_logo.png">
+            </div>
+            <div class="header item">
+                    <h1>Laboratorio Virtuale</h1>
+            </div>
+            <!--
+            <div class="right menu">
+                <div class="clickable item ui big dropdown">
+                    <span id="NomeUtente" class="middle aligned"><%=utente%></span>
+                    <i id="user" class="fitted user big icon"></i>
+                    <div class="menu">
+                        <div id="Logout" class="item">
+                            <i class="sign out icon"></i> Logout
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <div id="container" class="ui middle aligned center aligned stackable grid">
+            <div class="column">
+                <div class="ui bordered segment">
+                    <h1>LOGIN</h1>
+                    <div>
+                        <img id="login_image" class="ui centered small image" src="../images/computer_icon.png">
+                    </div>
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Nome Utente</label>
+                            <div class="ui labeled input" >
+                                <div class="ui basic right pointing label">
+                                    <i class="fitted big user circle icon"></i>
+                                </div>
+                                <input id="username" type="text" name="username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui labeled input" >
+                                <div class="ui basic right pointing label">
+                                    <i class="fitted big key icon"></i>
+                                </div>
+                                <input id="password" type="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <br>
+                    </form>
+                    <button id="Invia" class="ui fluid large green button">Login</button>
+                    <div id="errore" class="ui error message" hidden></div>
+                    <hr>
+                    <span>Non sei ancora registrato? <a href="/register">Registrati</a></span>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
